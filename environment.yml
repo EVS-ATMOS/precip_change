@@ -4,8 +4,6 @@ channels:
    - ncar
 dependencies:
    - python=3.6
-   - poppler=0.52
-   - xerces-c=3.1
    - numpy
    - matplotlib
    - cartopy
@@ -13,7 +11,13 @@ dependencies:
    - netcdf4
    - metpy
    - siphon
-   - pynio=dev
+   - pynio
    - xarray
    - scipy
    - boto
+   - coincbc=2.9.9
+   - pip:
+     - git+https://github.com/jjhelmus/CyLP.git@py3
+     - git+https://github.com/ARM-DOE/pyart
+     - git+https://github.com/CSU-Radarmet/CSU_RadarTools.git
+
